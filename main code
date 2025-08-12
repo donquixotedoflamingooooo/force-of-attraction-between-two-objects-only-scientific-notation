@@ -1,0 +1,13 @@
+import math
+G= 6.67*10**-11
+
+m1= float(input('Enter the mass of first object in kg using scientific notations [example: 5.97e24]: '))
+m2= float(input('Enter the mass of second object in kg using scientific notations [example: 5.97e24]: '))
+r=float(input('Enter the distance between the centre of those objects in m: '))
+if(r==0):
+    print('Distance cannot be zero.')
+
+else:
+    F= (G*m1*m2)/r**2
+
+print('The force of attraction between those two bodies are '+str(F)+ ' N')
